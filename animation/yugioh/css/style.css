@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    background-image: url(../images/card_back.png);
+    width: 400px;
+    height: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    transition: 0.5s all ease;
+    transform: rotate(45deg) scale(0.7);
+    box-shadow: 0 20px 50px #ccc;
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: rotate(0) scale(1);
+}
+
+.card1:active {
+    background-image: url(../images/obelisk.png);
+}
+
+.card2:active {
+    background-image: url(../images/ra.png);
+}
+
+.card3:active {
+    background-image: url(../images/slifer.png);
+}
