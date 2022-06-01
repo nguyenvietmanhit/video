@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo CSS</title>
+	<style type="text/css">
+		h2 {
+			color:  green;
+		}
+	</style>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h2>Thẻ h2</h2>
+	<h1 style="color: red">Thẻ h1</h1>
+
+	<!-- Một số Selector CSS: -->
+	<!-- + Theo Tên thẻ -->
+	<!-- + Theo id và class -->
+	<style>
+		#h4-id {
+			color: blue;
+		}
+		.h3-class {
+			color: red;
+		}
+	</style>
+	<h3 class="h3-class">Thẻ h3 1</h3>
+	<h3 class="h3-class">Thẻ h3 2</h3>
+	<h4 id="h4-id">Thẻ h4</h4>
+	<!-- + Theo cấp -->
+	<style type="text/css">
+		#personal a {
+			color:  red;
+		}
+	</style>
+	<div id="personal">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+	<a href="#">Link ngoài thẻ div</a>
+	<!-- + Theo thuộc tính thẻ -->
+	<style type="text/css">
+		input[type=text] {
+			background: red;
+		}
+	</style>
+	<input type="text" />
+	<input type="password" />
+	<input type="number" />
+	<!-- Theo trạng thái -->
+	<style type="text/css">
+		#h3-hover:hover {
+			color: red;
+		}
+		#ul-pos li:first-child {
+			background: red;
+		}
+		#ul-pos li:last-child {
+			background: yellow;
+		}
+		#ul-pos li:nth-child(2) {
+			background: pink;
+		}
+		#ul-pos li:nth-child(3) {
+			background: blue;
+		}
+	</style>
+	<h3 id="h3-hover">Hover để đổi màu text</h3>
+	<ul id="ul-pos">
+		<li>Li 1</li>
+		<li>Li 2</li>
+		<li>Li 3</li>
+		<li>Li 4</li>
+	</ul>
+</body>
+</html>

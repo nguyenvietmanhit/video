@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thuộc tính CSS cơ bản</title>
+</head>
+<body>
+
+	<style type="text/css">
+		/* Backgound */
+		.div-bg {
+		    /*background-color: #1d641d;
+		    background-image: url(layout.png);
+		    background-repeat: no-repeat;
+		    background-position: center;*/
+		    /* color: red; */
+		    background: #1d641d url(layout.png) no-repeat center;
+		}
+		/*Font*/
+		#p-font {
+		    font-family: Arial;
+		    font-style: italic;
+		    font-weight: bold;
+		    font-size: 28px;
+		}
+		/*Text*/
+		#p-text {
+		    color: red;
+		    text-align: center;
+		    text-decoration: underline;
+		    text-transform: uppercase;
+		    text-shadow: 3px 2px 8px red;
+		    line-height: 22px;
+		}
+		/*Border*/
+		div#div-border {
+		    border-color: red;
+		    border-style: solid;
+		    border-width: 5px;
+		    border-radius: 10px;
+		}
+		/*Margin*/
+		#mg1 {
+			background: red;
+		}
+		#mg1 {
+		    background: red;
+		    margin-bottom: 20px;
+		    margin-left: 30px;
+		    margin-right: 50px;
+		    margin-top: 20px;
+		    margin: 10px;
+		}
+		/*padding*/
+		div#div-padding {
+		    border: 1px solid red;
+		    padding-top: 20px;
+		    padding-left: 10px;
+		    padding-right: 40px;
+		    padding-bottom: 20px;
+		}
+		/*width height*/
+		div#width-height {
+		    background: yellow;
+		    width: 100px;
+		    height: 200px;
+		    min-width: 200px;
+		}
+		/*position:  fixed*/
+		div#pos-fixed {
+		    background: red;
+		    /* margin: 30px; */
+		    position: fixed;
+		    right: 0;
+		    top: 100px;
+		}
+		/*position: relative*/
+		div#pos-relative {
+		    background: green;
+		    position: relative;
+		    right: 0;
+		    top: 0;
+		}
+		/*position: absolute*/
+		#parent {
+			width: 300px;
+			height: 300px;
+			background: blue;
+			position: relative;
+		}
+		#pos-absolute {
+		    width: 100px;
+		    height: 100px;
+		    background: yellow;
+		    position: absolute;
+		    right: 40px;
+		}
+	</style>
+	<div id="parent">
+		<div id="pos-absolute">Pos absolute</div>
+	</div>
+
+	<div id="pos-relative">Pos relative</div>
+	<div id="pos-fixed">Pos fixed</div>
+
+	<div id="width-height">Div width height</div>
+
+	<div id="div-padding">Div padding</div>
+	<div id="mg1">Div 1 margin</div>
+	<div id="mg2">Div 2 margin</div>
+	<div id="div-border">Div border</div>
+	<p id="p-text">Thẻ p text</p>
+	<p id="p-font">Thẻ p font</p>
+	<div class="div-bg">Div backgound</div>
+</body>
+</html>
