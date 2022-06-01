@@ -1,0 +1,5 @@
++ CSS, cách sử dụng CSS với HTML
++ CSS selector 
++ Một số thuộc tính CSS cơ bản, cách sử dụng Chrome Devtool để CSS
++ Font trong CSS, sử dụng thư viện FontAwesome
++ Thực hành CSS căn bản
