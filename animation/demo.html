@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo CSS Animation</title>
+</head>
+<body>
+	<style>
+		/*Opacity*/
+		div#opacity {
+		    opacity: 0.5;
+		}
+		/*Transition*/
+		div#transition {
+		    width: 200px;
+		    height: 200px;
+		    background: red;
+		    transition-property: width;
+		    transition-duration: 2s;
+		    transition-timing-function: ease;
+		}
+		#transition:hover {
+			width: 300px;
+		}
+		/*Transform*/
+		#transform {
+		    width: 200px;
+		    height: 200px;
+		    background: yellow;
+		    transform: translate(10px, 20px) rotate(45deg) scale(1.5) skew(45deg, 10deg) rotateX(45deg) rotateY(45deg) rotateZ(45deg);
+		}
+		/*Overflow*/
+		div#overflow {
+		    margin-left: 400px;
+		    background: red;
+		    width: 100px;
+		    overflow: hidden;
+		}
+		/*Box-shadow*/
+		div#box-shadow {
+		    width: 200px;
+		    height: 200px;
+		    background: yellow;
+		    box-shadow: 5px 10px 5px 10px red;
+		}
+		/*Animation*/
+		#animation {
+			width: 200px;
+			height: 200px;
+			background: green;
+			animation-name: example;
+			animation-duration: 4s;
+			animation-delay: 1s;
+			animation-iteration-count: 3;
+			animation-timing-function: ease-in;
+		}
+		@keyframes example {
+			0% {background: green;}
+			25% {background: blue;}
+			50% {background: yellow;}
+			100% {background: green;}
+		}
+		/*CSS Function*/
+		/*attr*/
+		#a1:after {
+			content: attr(href);
+		}
+		/*calc*/
+		#calc-func {
+			background: red;
+			width: calc(100% - 100px);
+		}
+	</style>
+	<div id="calc-func">Calc function demo</div>
+
+	<a id="a1" href="abc">Link 1</a>
+
+	<div id="animation">Animation</div>
+	<div id="box-shadow">Box shadow</div>
+	<div id="overflow">Overflow</div>
+	<!-- <div id="transform">Transform</div> -->
+	<!-- <div id="transition">Transition</div> -->
+	<div id="opacity">Opacity</div>
+</body>
+</html>
