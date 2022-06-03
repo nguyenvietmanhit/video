@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thuộc tính CSS cơ bản</title>
+</head>
+<body>
+
+	<style type="text/css">
+		/* Backgound */
+		.div-bg {
+		    /*background-color: #1d641d;
+		    background-image: url(layout.png);
+		    background-repeat: no-repeat;
+		    background-position: center;*/
+		    /* color: red; */
+		    background: #1d641d url(layout.png) no-repeat center;
+		}
+		/*Font*/
+		#p-font {
+		    font-family: Arial;
+		    font-style: italic;
+		    font-weight: bold;
+		    font-size: 28px;
+		}
+		/*Text*/
+		#p-text {
+		    color: red;
+		    text-align: center;
+		    text-decoration: underline;
+		    text-transform: uppercase;
+		    text-shadow: 3px 2px 8px red;
+		    line-height: 22px;
+		}
+		/*Border*/
+		div#div-border {
+		    border-color: red;
+		    border-style: solid;
+		    border-width: 5px;
+		    border-radius: 10px;
+		}
+		/*Margin*/
+		#mg1 {
+			background: red;
+		}
+		#mg2 {
+		    background: yellow;
+		}
+
+	</style>
+	<div id="mg1">Div 1 margin</div>
+	<div id="mg2">Div 2 margin</div>
+	<div id="div-border">Div border</div>
+	<p id="p-text">Thẻ p text</p>
+	<p id="p-font">Thẻ p font</p>
+	<div class="div-bg">Div backgound</div>
+</body>
+</html>
