@@ -42,13 +42,65 @@
 		}
 		/*Margin*/
 		#mg1 {
-			background: red;
-		}
+    background: red;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin: 40px;
+}
 		#mg2 {
 		    background: yellow;
 		}
-
+		/*Padding*/
+		div#padding {
+    background: yellow;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+}
+	/*Width height*/
+	div#wh {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    min-width: 200px;
+}
+/*Position*/
+div#fixed {
+    background: green;
+    position: fixed;
+    top: 60px;
+    right: 0;
+}
+div#relative {
+    background: red;
+    position: relative;
+    right: 0;
+    top: 110px;
+}
+div#parent {
+    background: yellow;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+div#absolute {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+}
 	</style>
+	<div id="parent">
+		<div id="absolute">Absolute</div>
+	</div>
+	<div id="relative">Div relative</div>
+	<div id="fixed">Div fixed</div>
+	<div id="wh">Width height</div>
+	<div id="padding">Padding</div>
 	<div id="mg1">Div 1 margin</div>
 	<div id="mg2">Div 2 margin</div>
 	<div id="div-border">Div border</div>
